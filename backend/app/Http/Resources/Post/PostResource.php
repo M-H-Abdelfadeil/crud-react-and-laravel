@@ -18,7 +18,7 @@ class PostResource extends JsonResource
             "id"=>$this->id,
             "title"=>$this->title,
             "description"=>$this->description,
-            "image"=> config('app.url')."/storage/public/posts/".$this->image,
+            "image"=> config('app.url')."/storage/posts/".$this->image,
         ];
     }
 }
