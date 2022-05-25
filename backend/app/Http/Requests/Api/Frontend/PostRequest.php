@@ -35,7 +35,7 @@ class PostRequest extends FormRequest
         if(in_array($this->method(),['PUT','PATCH'])){
             $post=$this->route()->parameter('id');
 
-            $rules["title"]=Rule::unique('posts','title')->ignore($post,'id');
+            $rules["title"]=["required","string","max:255",Rule::unique('posts','title')->ignore($post,'id')];
             $rules["image"]="nullable|mimes:png,jpg,jpeg|max:5000";
         }
 

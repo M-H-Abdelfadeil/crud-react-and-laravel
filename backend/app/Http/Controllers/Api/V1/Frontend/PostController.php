@@ -39,6 +39,7 @@ class PostController extends Controller
 
         $image=Helper::uploadSingleFile('posts',$request->file('image'));
 
+
         $post = Post::create([
             "title"=>$request->title,
             "description"=>$request->description,
@@ -76,6 +77,7 @@ class PostController extends Controller
      */
     public function update(PostRequest $request, $id)
     {
+
 
         $post = Post::find($id);
         if(!$post){

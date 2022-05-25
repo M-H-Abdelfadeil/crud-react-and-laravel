@@ -1,0 +1,114 @@
+/*Navbar style*/
+
+.navbar {
+  margin-top: 10px;
+  padding: 3px;
+  background-color: rgb(119, 110, 110);
+}
+
+.navbar a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  color: rgb(194, 198, 203);
+  
+}
+
+.active{
+  color: rgb(255, 255, 255)!important;
+}
+
+
+/*
+  Form create style
+*/
+
+
+.formpost input[type=text], .formpost  textarea , .formpost  input[type=file]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formpost .container-input{
+  margin-top: 30px;
+}
+.formpost input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formpost input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.formpost {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.formpost .msgError{
+  color: #d33838;
+  margin-bottom: 10px;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/*style card post */
+
+.contaier-card{
+  text-align: center;
+  border: #45a049 1px solid;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+.contaier-card .box-buttons{
+  margin-top: 20px;
+}
+.contaier-card .box-buttons button  , .contaier-card .box-buttons a{
+  display: inline-block;
+  all: unset;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contaier-card .box-buttons .btn-edit{
+  background-color: #45a049;
+  color:#fff;
+  margin-right: 30px;
+}
+
+.contaier-card .box-buttons .btn-delete{
+  background-color: #e15252;
+  color:#fff;
+}
+
+.contaier-card .box-buttons .btn-details{
+  background-color: #a59090;
+  color:#fff;
+  margin-right: 5px;
+}
+
+.box-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.box-image {
+  height: 190px;
+}
